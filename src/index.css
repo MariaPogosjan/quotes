@@ -1,13 +1,84 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  background-color: #BBC7DC;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color:#2C3227;
+  font-weight: 400;
+  font-family: 'Noto Sans', sans-serif;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 90%;
+  position: relative;
+  margin-top: 1rem ;
+  padding: 0.6rem 0;
+  border: 2px solid #2C3227;
+  border-right: none !important;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.form-btn {
+  position: absolute;
+  width: 100px;
+  margin-top: 1rem;
+  padding: 12.5px;
+  border: 2px solid #2C3227;
+  background-color: #2C3227;
+  color: #BBC7DC;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.error {
+  color: rgb(182, 67, 67);
+  font-weight: bold;
+}
+
+.quote-wrapper {
+  height: 30vh;
+  width: 90%;
+}
+
+.quote-content {
+  width: 90%;
+  margin: 20px 0;
+  font-family: 'Noto Sans', sans-serif;
+  font-style: italic;
+  color: #191a19;
+}
+
+.btn {
+  width: 150px;
+  margin: 10px 10px 10px 0;
+  padding: 8px;
+  border: none;
+  background-color: #2C3227;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.restart-btn {
+  width: 150px;
+  margin: 10px 10px 10px 0;
+  padding: 8px;
+  border: none;
+  background-color: #3c3c96;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Noto Sans', sans-serif;
 }
