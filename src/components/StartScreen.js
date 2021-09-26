@@ -19,7 +19,7 @@ const StartScreen = () => {
 
   return (
     <form onSubmit={onQuoteChange}>
-      <h1>Ask for your favorite Quote Machine</h1>
+      <h1>Who is you favorite Quote Machine?</h1>
       <input
         className="form-input"
         type="text"

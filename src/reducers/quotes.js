@@ -35,7 +35,7 @@ export default quotes
 export const generateQuotes = (tag) => {
   return (dispatch, getState) => {
     if (tag) {
-      fetch(`http://api.quotable.io/random?author=${getState().quotes.author}&tags=${tag}`)
+      fetch(`https://api.quotable.io/random?author=${getState().quotes.author}&tags=${tag}`)
         .then((res) => {
           if (res.ok) {
             dispatch(quotes.actions.setError(null))
@@ -49,7 +49,7 @@ export const generateQuotes = (tag) => {
         })
         .catch((error) => dispatch(quotes.actions.setError(error.message)))
     } else {
-      fetch(`http://api.quotable.io/random?author=${getState().quotes.author}`)
+      fetch(`https://api.quotable.io/random?author=${getState().quotes.author}`)
         .then((res) => {
           if (res.ok) {
             dispatch(quotes.actions.setError(null))
