@@ -72,6 +72,11 @@ h1 {
   font-family: 'Noto Sans', sans-serif;
 }
 
+.disabled-btn {
+  background-color: #12131238;
+  color: #ffffff7a;
+}
+
 .restart-btn {
   width: 150px;
   margin: 10px 10px 10px 0;

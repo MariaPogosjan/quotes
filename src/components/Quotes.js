@@ -46,7 +46,7 @@ const Quotes = () => {
             </button>
           ))}
           <button
-            className="btn"
+            className={`btn ${!history.length ? 'disabled-btn' : 'btn'}`}
             type="button"
             disabled={!history.length}
             onClick={onQuoteRevert}>
